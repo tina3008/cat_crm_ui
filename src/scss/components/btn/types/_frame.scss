@@ -1,0 +1,22 @@
+@if index($btn-types, warning) {
+    .btn--warning {
+      border-color: #F07F2E;
+  
+      &:active {
+        border-color: darken(#F07F2E, 10%);
+      }
+  
+      @media (hover: hover) {
+        &:hover,
+        &:focus {
+            border-color: lighten(#F07F2E, 10%);
+         
+        }
+      }
+  
+      &[disabled]{
+        background-color: rgba(#B5B5BE, 0.5);
+      }
+    }
+  }
+  
