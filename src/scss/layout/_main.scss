@@ -36,4 +36,21 @@
         'co-workers reports'
         ;
     }
+
+    &--list {
+      
+        grid-template-areas: none;    
+     
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    
+        @include mx.mq('md') {
+          padding: 36px;
+        }
+    
+        @include mx.mq('lg') {
+          grid-area: main;
+        }
+      }
 }

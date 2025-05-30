@@ -32,7 +32,7 @@
   overflow: auto;
 
   @include mx.mq('lg') {
-    margin-right: 14px;
+    margin-right: -14px;
   }
 }
 .tasks-item {
@@ -78,7 +78,7 @@
   }
 }
 .tasks-info {
-    flex-grow: 1px;
+    flex-grow: 1;
 }
 .tasks-heading {
     @extend %details;
