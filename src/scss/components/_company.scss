@@ -10,11 +10,13 @@
   width: 100%;
   background-color: fn.get-color('dark-primary');
   @include mx.mq('md') {
-    flex-direction: row-reverse ;
-    flex-wrap: wrap; 
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
     justify-content: left;
   }
-
+  @include mx.mq('xl') {
+    max-width: 1190px;
+  }
 }
 
 .company-item {
@@ -28,44 +30,42 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
+
   background-color: fn.get-color('dark-tertiary');
-  
 
   @include mx.mq('md') {
-    max-width: calc((100% - 20px)/2) ;
+    max-width: calc((100% - 20px) / 2);
   }
   @include mx.mq('xl') {
-    max-width: calc((100% - 40px)/3) ;
+    max-width: calc((100% - 40px) / 3);
   }
 }
 
-.first-row{
-display: inline-flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 4px;
+.first-row {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
 }
 
-.company-icon{
-fill: fn.get-color('light');
+.company-icon {
+  fill: fn.get-color('light');
 }
-.location{
+.location {
   display: inline-flex;
   justify-content: left;
-  align-items:center;
+  align-items: center;
   margin-bottom: 32px;
   column-gap: 8px;
 
-  &-icon{
-    fill:fn.get-color('success');
+  &-icon {
+    fill: fn.get-color('success');
   }
 
-  &-text{
-
+  &-text {
   }
 
-  &-btn{  
+  &-btn {
     color: fn.get-color('accent-primary');
     border: 1 px solid;
     border-color: fn.get-color('accent-primary');
